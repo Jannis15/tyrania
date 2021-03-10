@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css" type="text/css">
+    <link rel = "icon" href = "images/loading.png">
+    <script src="assets/script.js"></script>
+    <title>© Tyrania.de - Statistiken</title>
+</head>
+<body>
+    <!--loading-animation-->
+    <div class="loading">
+        <h1>Loading...</h1>
+        <svg width="200" height="200" viewBox="0 0 100 100">
+            <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+            <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+            <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+            <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+        </svg>
+    </div>
+    <!--Title-->
+    <div class="header stats" id="top">
+        <img src="images/title-background.jpg" alt="">
+        <div class="minecraft">
+            <img src="images/title.png" alt="Minecraft">
+        </div>
+    </div>
+    <!--Nav-Bar--> 
+    <nav id="nav-stats">
+        <div class="logo" id="links">
+            <h2><a href="index.html">Tyrania.de</a></h2>
+        </div>
+        <ul class="nav-links stats">
+            <li><a href="games.html">Spiele</a></li>
+            <li><a href="stats.html">Statistiken</a></li>
+            <li><a href="forum.php">Forum</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!--Register-Bar-->
+    <div class="register stats">
+        <div class="buttons">
+            <a href="#" id="reg">Registrieren</a>
+            <a href="#">Anmelden</a>
+        </div>
+        <div class="player_online">
+            <h2>Spieler online:&nbsp;</h2>
+            <h3 id="number">339</h3>
+        </div>
+    </div>
+    <!--Games-->
+    <div class="register games">
+        <div class="buttons">
+            <a href="bedwars.html" id="games">Bed Wars</a>
+            <a href="bowbash.html" id="games">Bow Bash</a>
+            <a href="survialgames.html" id="games">Survival Games</a>
+            <a href="creativemode.html" id="games">Creative Mode</a>
+        </div>
+    </div>
+    <!--Content-->
+    <div class="stats-bg">
+        <div class="stats-game-selection">
+            <div class="stats-game-selection-hello">Schaue dir die Statistiken an!</div>
+            <div class="stats-game-selection-games">
+                <a href="bedwars.html"><div id="bedwars" class="gallery"><img src="images/bed.png" alt=""></div></a>
+                <a href="bowbash.html"><div id="bowbash" class="gallery"><img src="images/bow.png" alt=""></div></a>
+                <a href="survialgames.html"><div id="survivalgames" class="gallery"><img src="images/sword.png" alt=""></div></a>
+                <a href="creativemode.html"><div id="creativemode" class="gallery"><img src="images/loading.png" alt=""></div></a>
+            </div>    
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="to-top-bg stats">
+        <div class="to-top stats"><a href="#top">Nach oben ↑</a></div>
+    </div>
+    <div class="footer stats">
+        <ul>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+        <div class="footer-copyright">
+            <p>© by Tyrania.de</p>
+            <p>made by Jannis Brake</p>
+        </div>
+    </div>    
+    <script src="assets/app.js"></script>
+</body>
+</html>
