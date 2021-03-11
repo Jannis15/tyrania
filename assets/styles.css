@@ -155,6 +155,7 @@ body {
 .minecraft {
   position: absolute;
   width: 29%;
+  max-width: 500px;
   height: 200px;
   display: flex;
   overflow: hidden;
@@ -551,7 +552,8 @@ nav {
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
-  width: 400px;
+  min-width: 333px;
+  width: 25%;
   top: 100%;
   height: 35px;
   background-color: #283D3B;
@@ -562,6 +564,7 @@ nav {
 
 /*Über_Uns*/
 .about_us {
+  border: 3px solid red;
   width: 100%;
   height: 100vh;
   margin: 0 auto;
@@ -580,10 +583,11 @@ nav {
 
 .about_center {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  width: 30%;
-  height: 40%;
-  min-height: 300px;
-  background-color: #772E25 ;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 325px;
+  max-height: 325px;
+  background-color: #772E25;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -592,36 +596,30 @@ nav {
   margin: 0.5%;
   color: white;
   box-shadow: 30px 30px 300px black;
-  text-shadow: 1px 1px 2px black; 
   transition: 0.4s;
 }
 
 .abouttext {
+  transition: 0.2s ease-in-out;
   font-weight: 600;
   font-size: 1.8em;
-  padding: 2.5%;
-  box-shadow: 0px 00px 25px rgba(0, 0, 0, 0.123);
-  border-radius: 1em;
-  transition: 0.3s;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.301);
+  border-radius: .4em;
 }
 
 .abouttext:hover {
-  font-size: 2.2em;
-  letter-spacing: 2px;
+  opacity: 0.8;
 }
 
 .aboutcontent {
   max-width: 80%;
   padding: 3%;
-  transition: 0.3s;
-}
-
-.aboutcontent:hover {
-  font-size: larger;
 }
 
 .about_center > a {
   background: #C44536;
+  font-weight: 600;
   text-decoration: none;
   padding: 3%;
   color: white;
@@ -677,7 +675,7 @@ nav {
   background-color: #474747;
 }
 
-@media screen and (max-width:988px) {
+@media screen and (max-width:1079px) {
   .about_center {
     width: 70%;
   }
