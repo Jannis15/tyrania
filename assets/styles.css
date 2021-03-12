@@ -317,14 +317,14 @@ nav {
 /*Content*/
 /*Register-Bar*/
 .register {
-  height: 40px;
+  min-height: 40px;
   width: 100%;
   background-color: white;
   display: flex;
   overflow: hidden;
   z-index: -2;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
 }
 
@@ -422,12 +422,14 @@ nav {
 
 .welcome_logo {
   max-width: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .welcome_logo > img {
-  min-height: 180px;
-  min-width: 180px;
-  width: 90%;
+  min-height: 120px;
+  min-width: 120px;
+  width: 80%;
   transition: 0.2s;
 }
 
@@ -445,6 +447,7 @@ nav {
 }
 
 .welcome_header {
+  text-align: center;
   font-weight: 600;
   font-size: 44px;
   transition: 0.3s;
@@ -455,7 +458,17 @@ nav {
 }
 
 .welcome_paragraph {
+  text-align: center;
   font-size: 24px;
+}
+
+@media screen and (max-width:500px) {
+  .welcome_header {
+    font-size: 33px;
+  }
+  .welcome_paragraph {
+    font-size: 20px;
+  }
 }
 
 /*Find Us*/
@@ -575,7 +588,7 @@ nav {
 }
 
 .home {
-  margin-top: 40px;
+  margin-top: 50px;
   height: auto;
   width: 978px;
   display: flex;
@@ -586,6 +599,7 @@ nav {
 }
 
 .home-poly {
+  transition: 0.2s ease-in-out;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   min-width: 380px;
   max-width: 380px;
@@ -681,6 +695,10 @@ nav {
 @media screen and (max-width:978px) {
   .home-poly.left, .home-poly.right {
     position: static;
+  }
+  .home-poly {
+    min-width: 350px;
+    max-width: 350px;
   }
 }
 
@@ -817,6 +835,9 @@ nav {
 
 #games {
   background-color: rgb(26, 26, 26);
+  padding: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 /*content*/
 .stats-bg {
@@ -828,6 +849,8 @@ nav {
 .stats-game-selection {
   height: 100%;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -838,11 +861,65 @@ nav {
   justify-content: center;
   color: white;
   padding: 20px;
-  margin: 20px auto;
+  margin: 20px 0px;
   border-radius: 3px;
   font-size: 32px;
   border: 1px solid rgba(255, 255, 255, 0.068);
   font-weight: 600;
+}
+
+.stats-game-selection-search {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  width: 40%;
+  margin: 0 auto;
+  min-width: 456px;
+  max-width: 500px;
+  background-color: rgb(46,46,46);
+  height: 40px;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 1em;
+}
+
+.stats-game-selection-search > a {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-game-selection-search > a > img {
+  height: 75%;
+  width: auto;
+  filter: invert(1);
+  transition: 0.1s;
+}
+
+.stats-game-selection-search > a:hover > img {
+  filter: none;
+} 
+
+.stats-game-selection-search > input {
+  width: 90%;
+  padding-left: 10px;
+  border-radius: 1em;
+  background-color: rgb(80, 80, 80);
+  color: white;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 500px) {
+  .stats-game-selection-search {
+    min-width: 300px;
+    width: 90%;
+  }
+  .stats-game-selection-search > input {
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
 
 .stats-game-selection-hello:hover {
@@ -850,12 +927,13 @@ nav {
 } 
 
 .stats-game-selection-games {
-  width: 440px;
-  margin: 0px auto;
+  max-width: 440px;
 }
 
 .gallery {
   position: relative;
+  min-width: 100px;
+  min-height: 100px;
   width: 200px;
   height: 200px;
   /* center content using flex box */
@@ -866,9 +944,16 @@ nav {
   box-shadow: 0 0 0 100px inset, 0 0 5px grey;
   /* hover out transition */
   transition: box-shadow 1s;
-  float: left;
+  float:left;
   z-index: 2;
   margin: 10px;
+}
+
+@media only screen and (max-width: 456px) {
+  .stats-game-selection-games {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .gallery > img {
@@ -964,10 +1049,13 @@ nav {
   align-items: center;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.192);
-  padding: 10px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 25%;
-  min-width: 300px;
+  min-width: 285px;
+  max-width: 720px;
   margin: auto;
+  margin-bottom: 20px;
   border-radius: 0.3em;
   transition: 0.2s ease-in-out;
 }
@@ -982,6 +1070,7 @@ nav {
 }
 
 .title > img {
+  padding: 10px;
   width: 60px;
   height: 60px;
 }
@@ -993,7 +1082,9 @@ nav {
 .bed-stats {
   border: 1px solid rgba(255, 255, 255, 0.192);
   border-radius: 0.3em;
-  width: 720px;
+  min-width: 500px;
+  width: 50%;
+  max-width: 720px;
   margin: auto;
   margin-top: 20px;
   padding: 10px;
