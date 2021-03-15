@@ -20,12 +20,17 @@
             <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
         </svg>
     </div>
-    <!--Title-->
-    <div class="header" id="top">
-        <img src="images/title-background.jpg" alt="">
-        <div class="minecraft">
-            <img src="images/title.png" alt="Minecraft">
-        </div>
+    <!--Register-Bar-->
+    <div class="register">
+      <div class="player_online">
+        <img src="images/signal.png" alt="">
+        <p>Spieler online:</p>
+        <span>339</span>
+      </div>
+      <div class="buttons">
+          <a href="register.php" id="reg">Registrieren</a>
+          <a href="register.php">Anmelden</a>
+      </div>
     </div>
     <!--Nav-Bar--> 
     <nav class="navbar">
@@ -37,60 +42,50 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="index.html" style="background-color: #197278;">Home</a></li>  
-            <li><a href="games.html">Spiele</a></li>
+            <li><a href="index.html" style="background-color: #228c94;">Home</a></li>  
             <li><a href="stats.html">Statistik</a></li>
+            <li><a href="support.html">Support</a></li>
             <li><a href="virus.php">Forum</a></li>
             <li id="shop"><a href="shop.html"><img src="images/shopping-cart.png" alt="">  Shop</a></li>
           </ul>
         </div>
       </nav>
-    <!--Register-Bar-->
-    <div class="register">
-        <div class="buttons">
-            <a href="register.php" id="reg">Registrieren</a>
-            <a href="register.php">Anmelden</a>
-        </div>
-        <div class="player_online">
-            <h2>Spieler online:&nbsp;</h2>
-            <h3 id="number">339</h3>
-        </div>
-    </div>
     <!--Content-->
     <!--Welcome-->
     <div class="welcome">
-        <img src="images/welcome.png" alt="">
-        <div class="welcome_content">
-            <div class="welcome_logo"><img src="images/loading.png" alt=""></div>
-            <div class="welcome_text">
-                <div class="welcome_header">Willkommen.</div>
-                <div class="welcome_paragraph">Tyrania.de ist nun live mit über 1000 Server-Plätzen!</div>
-            </div>
-        </div>
+      <img src="images/welcome.png" alt="">
+      <div class="plane"></div>
+      <div class="welcome_content">
+          <div class="welcome_logo"><img src="images/loading.png" alt=""></div>
+          <div class="welcome_text">
+              <div class="welcome_header">Willkommen.</div>
+              <div class="welcome_paragraph">Tyrania.de ist nun live mit über 1000 Server-Plätzen!</div>
+          </div>
+      </div>
     </div>
     <!---Find-Us-->
     <div class="find-div">
-        <div class="find-text">Finde uns hier:</div>
+        <div class="find-text">Finde uns unter:</div>
         <div class="find-links">
             <ul>
                 <li>
-                  <a href="#">
-                    <img src="images/discord.png" alt="">
+                  <a href="ts3server://193.31.24.224">
+                    <img src="images/teamspeak.png" alt="">
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/Datokai/status/1370910152866553857">
                     <img src="images/twitter.png" alt="">
                   </a>
                   </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                     <img src="images/youtube.png" alt="">
                   </a>
                   
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/russischer.tuersteher/?hl=de">
                     <img src="images/instagram.png" alt="">
                   </a> 
                 </li>
@@ -103,19 +98,19 @@
     <div class="home-bg">
         <div class="home">
             <div class="home-poly">
-                <div class="home-text">Unser Server</div>
-                <div class="home-content">Seit 2021 im Internet zu finden! Verbinde dich im Minecraft-Mehrspielermenü mit der IP: Tyrania.de</div>
-                <a href="register.php">Jetzt anmelden</a>
-            </div>
-            <div class="home-poly left">
-                <div class="home-text">Spiele</div>
-                <div class="home-content">Finde heraus, welche Spiele sich auf dem Server befinden.</div>
-                <a href="games.html">Zu den Spielen</a>
+              <div class="home-text">Statistiken</div>
+              <div class="home-content">Schaue dir deine Statistik an oder späe auf die Top-Ranglisten.</div>
+              <a href="stats.html">Zur Statistik</a>
             </div>
             <div class="home-poly right">
-                <div class="home-text">Statistiken</div>
-                <div class="home-content">Schaut euch die allgemine Statistik zum Server an oder sucht nach der Statistik eines beliebigen Spielers.</div>
-                <a href="stats.html">Zur Statistik</a>
+                <div class="home-text">Support</div>
+                <div class="home-content">Erstelle ein Ticket bei benötigter Hilfe oder stelle einen Entbannungsantrag beim Support.</div>
+                <a href="support.php">Zum Support</a>
+            </div> 
+            <div class="home-poly left">
+                <div class="home-text">Shop</div>
+                <div class="home-content">Werde Premium-Mitglied und erhalte diverse Boni und andere Vorzüge!</div>
+                <a href="shop.html">Zum Shop</a>
             </div>
             <div class="home-poly down">
                 <div class="home-text">Forum</div>
