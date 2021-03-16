@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/styles.css" type="text/css">
     <link rel = "icon" href = "images/loading.png">
     <script src="assets/script.js"></script>
-    <title>© Tyrania.de - Homepage</title>
+    <title>Tyrania.de - Impressum</title>
 </head>
 <body>
     <!--loading-animation-->
@@ -20,42 +20,44 @@
             <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
         </svg>
     </div>
-    <!--Title-->
-    <div class="header" id="top">
-        <img src="images/title-background.jpg" alt="">
-        <div class="minecraft">
-            <img src="images/title.png" alt="Minecraft">
-        </div>
-    </div>
-    <!--Nav-Bar--> 
-    <nav class="navbar">
-        <div class="brand-title">Tyrania.de</div>
-        <a href="#" class="toggle-button">
-          <span class="bar" id="bar1"></span>
-          <span class="bar" id="bar2"></span>
-          <span class="bar" id="bar3"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="index.html">Home</a></li>  
-            <li><a href="games.html">Spiele</a></li>
-            <li><a href="stats.html">Statistik</a></li>
-            <li><a href="virus.php">Forum</a></li>
-            <li id="shop"><a href="shop.html"><img src="images/shopping-cart.png" alt="">  Shop</a></li>
-          </ul>
-        </div>
-      </nav>
     <!--Register-Bar-->
     <div class="register">
+        <div class="player_online">
+          <img src="images/signal.png" alt="">
+          <p>Spieler online:</p>
+          <span>339</span>
+        </div>
         <div class="buttons">
             <a href="register.php" id="reg">Registrieren</a>
             <a href="register.php">Anmelden</a>
         </div>
-        <div class="player_online">
-            <h2>Spieler online:&nbsp;</h2>
-            <h3 id="number">339</h3>
-        </div>
-    </div>
+      </div>
+      <!--Nav-Bar--> 
+      <nav class="navbar">
+          <div class="brand-title">Tyrania.de</div>
+          <a href="#" class="toggle-button">
+            <span class="bar" id="bar1"></span>
+            <span class="bar" id="bar2"></span>
+            <span class="bar" id="bar3"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li id="dropdown">
+                <a href="stats.html">Statistik<img src="images/arrow.png" alt=""></a>
+                <div class="dropdown-menu">
+                  <a href="bedwars.html">Bedwars</a>
+                  <a href="bedwars.html">Bow Bash</a>
+                  <a href="bedwars.html">Survival Games</a>
+                  <a href="bedwars.html">Creative Mode</a>
+                </div>
+              </li>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="forum.php">Forum</a></li>
+              <li id="shop"><a href="shop.html"><img src="images/shopping-cart.png" alt="">Shop</a></li>
+            </ul>
+          </div>
+        </nav>
     <!--Content-->
     <div class="impressum">
         <div class="impressum-page">

@@ -151,6 +151,11 @@ body {
   transition: 0.1s ease-in-out;
 }
 
+.brand-title > a {
+  color: white;
+  text-decoration: none;
+}
+
 .brand-title:hover {
   opacity: .8;
 }
@@ -540,7 +545,7 @@ body {
 .welcome_logo > img {
   min-height: 120px;
   min-width: 120px;
-  width: 100%;
+  width: 90%;
   transition: 0.2s;
 }
 
@@ -693,6 +698,18 @@ body {
   background-color: rgb(69,69,69);
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-bg > img {
+  background-size:contain;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: auto;
+  opacity: .2;
+  filter: blur(5px)
 }
 
 .home {
@@ -775,6 +792,8 @@ body {
 .home-poly.left {
   position: absolute;
   left: 0%;
+  top: 41%;
+  transform: translateY(-41%);
   background-color: #228c94;
 }
 
@@ -786,6 +805,8 @@ body {
 .home-poly.right {
   position: absolute;
   right: 0%;
+  top: 41%;
+  transform: translateY(-41%);
   background-color: #115a5f;
 }
 
@@ -804,10 +825,19 @@ body {
 @media screen and (max-width:978px) {
   .home-poly.left, .home-poly.right {
     position: static;
+    top: unset;
+    transform: unset;
   }
   .home-poly {
     min-width: 350px;
     max-width: 350px;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .home-bg > img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -819,6 +849,10 @@ body {
   justify-content: start;
   padding: 7px 0px;
   background-color: rgb(69,69,69);;
+}
+
+.to-top-bg.index {
+  background-color: unset;
 }
 
 .to-top-bg.stats {
@@ -1088,7 +1122,7 @@ body {
 }
 
 #bedwars::after {
-  content: 'Bed Wars';
+  content: 'Bedwars';
   font-family: 'Poppins', sans-serif;
   text-shadow: 1px 3px 3px black;
   font-weight: 500;
