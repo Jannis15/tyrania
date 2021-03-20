@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css" type="text/css">
+    <link rel = "icon" href = "images/loading.png">
+    <script src="assets/script.js"></script>
+    <title>Tyrania.de - Bedwars</title>
+</head>
+<body>
+    <!--loading-animation-->
+    <div class="loading">
+        <h1>Loading...</h1>
+        <svg width="200" height="200" viewBox="0 0 100 100">
+            <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+            <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+            <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+            <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+        </svg>
+    </div>
+    <!--Register-Bar-->
+    <div class="register">
+        <div class="player_online">
+          <img src="images/signal.png" alt="">
+          <p>Spieler online:</p>
+          <span>339</span>
+        </div>
+        <div class="buttons">
+            <a href="register.php" id="reg">Registrieren</a>
+            <a href="register.php">Anmelden</a>
+        </div>
+      </div>
+      <!--Nav-Bar--> 
+      <nav class="navbar">
+          <div class="brand-title">Tyrania.de</div>
+          <a href="#" class="toggle-button">
+            <span class="bar" id="bar1"></span>
+            <span class="bar" id="bar2"></span>
+            <span class="bar" id="bar3"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li id="dropdown">
+                <a href="stats.html" style="background-color: #228c94;">Statistik<img src="images/arrow.png" alt=""></a>
+                <div class="dropdown-menu">
+                  <a href="bedwars.html" style="background-color: #228c94;">Bedwars</a>
+                  <a href="bedwars.html">Bow Bash</a>
+                  <a href="bedwars.html">Survival Games</a>
+                  <a href="bedwars.html">Creative Mode</a>
+                </div>
+              </li>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="forum.php">Forum</a></li>
+              <li id="shop"><a href="shop.html"><img src="images/shopping-cart.png" alt="">Shop</a></li>
+            </ul>
+          </div>
+        </nav>
+    <!--Content-->
+    <div class="bedwars-bg">
+        <div class="title">
+            <img src="images/bed.png" alt="">
+            <p>Bedwars</p>
+        </div>
+        <div class="stats-game-selection-search">
+            <a href="playersearch.html"><img src="images/loupe.png" alt=""></a>
+            <input type="text" id="fname" name="fname" placeholder="Search for player name e.g. &quot; Flubber &quot;">
+        </div>
+        <div class="bed-stats">
+            <table>
+                <tr>
+                 <th scope="col">#</th>
+                 <th scope="col">Player</th>
+                 <th scope="col">Played Games</th>
+                 <th scope="col">Wins</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="/stats.html"><div style="height:100%;width:100%">Flubber</div></a></td>
+                    <td>2.14</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="/stats.html"><div style="height:100%;width:100%">Robert</div></a></td>
+                    <td>1.54</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="/stats.html"><div style="height:100%;width:100%">Flubbert</div></a></td>
+                    <td>1.75</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="/stats.html"><div style="height:100%;width:100%">Bert</div></a></td>
+                    <td>1.3</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="/stats.html"><div style="height:100%;width:100%">Jannis</div></a></td>
+                    <td>1.00</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="/stats.html"><div style="height:100%;width:100%">David</div></a></td>
+                    <td>0.73</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="/stats.html"><div style="height:100%;width:100%">Rob</div></a></td>
+                    <td>0.44</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="/stats.html"><div style="height:100%;width:100%">Ert</div></a></td>
+                    <td>0.00</td>
+                    <td>0</td>
+                </tr>                                                  
+            </table>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="to-top-bg stats">
+        <div class="to-top stats"><a href="#top">Nach oben ↑</a></div>
+    </div>
+    <div class="footer stats">
+        <ul>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+        <div class="footer-copyright">
+            <p>© by Tyrania.de</p>
+            <p>made by Jannis Brake</p>
+        </div>
+    </div>    
+    <script src="assets/app.js"></script>
+</body>
+</html>
